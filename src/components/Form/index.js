@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {View, Text, TextInput, TouchableOpacity,Vibration} from 'react-native'
+import {View, Text, TextInput, TouchableOpacity,Vibration,Pressable,Keyboard} from 'react-native'
 import styles from "./Title/style";
 import ResultImc from "./ResultImc/Index";
 
@@ -15,6 +15,7 @@ const [textButton,setTextButton]= useState("Calcular")
 const [errorMessage,setErrorMessage]= useState(Null)
 
 function imcCalculator(){
+    let heightFormat = height.replace(",",".")
     return setImc((weight/(height*height)).toFixed(2))
 }
 
@@ -43,7 +44,7 @@ function validationImc(){
 }
 
     return(
-        <View style={styles.formContext}>
+        <Pressable onPress={Keyboard.dismiss} style={styles.formContext}>
             <View style={styles.form}>
                 <Text style={styles.formLabel}>Altura</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
@@ -55,6 +56,6 @@ function validationImc(){
                 <Text style={styles.textButtonCalculator}/>
             </View>
             <ResultImc messageResultImc={messageImc} resultImc={imc} />
-        </View>
+        </Pressable>
     );
 }
