@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         marginBottom:10,
     },
     shared:{
-        backgroundcolor:"#1677f2",
+        backgroundcolor:"#1877f2",
         borderRadius:50,
         paddingBottom:5,
         paddingTop:5,
