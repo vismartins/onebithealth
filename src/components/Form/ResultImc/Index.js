@@ -1,6 +1,6 @@
-import React from 'react'
-import {View, Text, TouchableOpacity, Share } from 'react-native'
-import styles from "./style"
+import React from 'react';
+import {View, Text, TouchableOpacity, Share } from 'react-native';
+import styles from "./style";
 
 export default function ResultImc(props){
 
@@ -13,16 +13,12 @@ export default function ResultImc(props){
     return(
         <View style={styles.contextImc}>
             <View style={styles.boxShareButton}>
-                {props.resultImc != null ?
+            <Text style={styles.information}>{props.messageResultImc}</Text>
+            <Text style={styles.numberImc}>{props.resultImc}</Text>
                 <TouchableOpacity onPress={onShare} style={styles.shared}>
                     <Text style={styles.sharedText}>Compartilhar</Text>
                 </TouchableOpacity>
-                :
-                <View/>
-                }
-            </View>   
-            <Text style={styles.titleResultImc}>{props.messageResultImc}</Text>
-            <Text style={styles.resultImc}>{props.resultImc}</Text>
+            </View> 
         </View>
     );
 }

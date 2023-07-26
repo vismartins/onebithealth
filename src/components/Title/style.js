@@ -1,16 +1,19 @@
-import {StyleShhet} from 'react-native'
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-    boxtitle:{
+    boxTitle:{
         alignItens:"center",
-        justofyContent:"center",
+        justifyContent:"center",
         padding:10,
+        margin:"auto",
     },
     textTitle:{
+        alignItems:"center",
         color:"#FF0043",
-        fontSize:24,
+        fontSize:30,
         fontWeight:"bold",
-    }
+        margin:"auto",
+    },
 });
 
 export default styles

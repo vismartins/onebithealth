@@ -10,17 +10,17 @@ const styles = StyleSheet.create({
     },
     resultImc:{
         fontSize:48,
-        color:'#ff0043',
+        color:'#FF0043',
         fontWeight:'bold',
     },
     numberImc:{
         fontSize:48,
-        color:'#ff0043',
+        color:'#FF0043',
         fontWeight:'bold',
     },
     information:{
         fontSize:18,
-        color:'#ff0043',
+        color:'#FF0043',
         fontWeight:'bold',
     },
     boxShareButton:{
