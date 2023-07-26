@@ -7,11 +7,11 @@ import ResultImc from "./ResultImc/Index";
 
 export default function Form(){
 
-const [height,setHeight]= useState(null)
-const [weight,setWeight]= useState(null)
-const [messageImc,setMessageImc]= useState("Preencha o peso e altura")
-const [imc,setImc]= useState(null)
-const [textButton,setTextButton]= useState("Calcular")
+const [height,setHeight]= useState(null);
+const [weight,setWeight]= useState(null);
+const [messageImc,setMessageImc]= useState(null);
+const [imc,setImc]= useState(null);
+const [textButton,setTextButton]= useState("Calcular");
 const [errorMessage,setErrorMessage]= useState(Null)
 
 function imcCalculator(){
@@ -49,11 +49,12 @@ function validationImc(){
                 <Text style={styles.formLabel}>Altura</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
                 <TextInput style={styles.input} placeholder='Ex=1.75' keyboardType='numeric' onChangeText={setHeight} value={height}/>
-                <Text>Peso</Text>
+                <Text style={styles.formLabel}>Peso</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
                 <TextInput style={styles.input} placeholder='Ex=70.00' keyboardType='numeric' onChangeText={setWeight} value={weight}/>
-                <TouchableOpacity style={styles.buttonCalculator} onPress={() => {validationImc()}}/>
+                <TouchableOpacity style={styles.buttonCalculator} onPress={() => {validationImc()}}>
                 <Text style={styles.textButtonCalculator}/>
+                </TouchableOpacity>
             </View>
             <ResultImc messageResultImc={messageImc} resultImc={imc} />
         </Pressable>

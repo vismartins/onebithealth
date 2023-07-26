@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         paddingTop:15,
         alignItems:'center',
         width:'100%',
-    }
+    },
     resultImc:{
         fontSize:48,
         color:'#ff0043',
@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
         alignItems:"center",
         marginBottom:10,
     },
-    shared{
+    shared:{
         backgroundcolor:"#1677f2",
         borderRadius:50,
         paddingBottom:5,
         paddingTop:5,
     },
-    sharedText{
+    sharedText:{
         color:"#ffffff",
         fontWeight:"bold",
         paddingHorizontal:30,
