@@ -69,7 +69,8 @@ export default function Form(){
             </TouchableOpacity>
             </View>
             }
-            <FlatList 
+            <FlatList
+            showsVerticalScrollIndicator={false} 
             style={styles.listImcs} 
             data={imcList.reverse()} 
             renderItem={({item}) => {
